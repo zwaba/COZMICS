@@ -26,7 +26,8 @@ Filter  / -100 -> 0   LP  ,   0 -> 100  HP
 Filter_On     / filter on/off
 
 
-Mod devices installation
+Mod devices installation:
+
 • Copy the zwabo-cozmics.lv2 folder to your Mod:
 ```
   scp -rp <path to zwabo-cozmics.lv2> root@192.168.51.1:/root/.lv2

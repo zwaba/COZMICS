@@ -17,7 +17,7 @@ Feedback  / 1 = infinite loop
 
 Crossfeed   / delay 1 and delay 2 feed eachother   / and  delay 3 and delay 4 feed eachother   
 
-Speed   / select speed 1/2 , 1, 2  for delay 1 and 2
+Speed   / select speed (1/2x , 1x, 2x)  for delay 1 and 2
 
 Disto   / add distortion in the feedback
 

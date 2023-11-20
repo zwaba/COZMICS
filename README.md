@@ -15,7 +15,7 @@ Reverse   / reverse delay 1 and 2
 
 Feedback  / 1 = infinite loop
 
-Crossfeed   / delay 1 and delay 2 feeds eachother   / and  delay 3 and delay 4 feeds eachother   
+Crossfeed   / delay 1 and delay 2 feed eachother   / and  delay 3 and delay 4 feed eachother   
 
 Speed   / select speed 1/2 , 1, 2  for delay 1 and 2
 

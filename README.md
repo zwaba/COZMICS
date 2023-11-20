@@ -21,7 +21,7 @@ Speed   / select speed (1/2x , 1x, 2x)  for delay 1 and 2
 
 Disto   / add distortion in the feedback
 
-Filter  / -100 -> 0   LP    0 -> 100  HP
+Filter  / -100 -> 0   LP  ,   0 -> 100  HP
 
 Filter_On     / filter on/off
 

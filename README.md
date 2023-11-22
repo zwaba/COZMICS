@@ -15,18 +15,19 @@ Reverse   / reverse delay 1 and 2
 
 Feedback  / 1 = infinite loop
 
-Crossfeed   / delay 1 and delay 2 feeds eachother   / and  delay 3 and delay 4 feeds eachother   
+Crossfeed   / delay 1 and delay 2 feed eachother   / and  delay 3 and delay 4 feed eachother   
 
-Speed   / select speed 1/2 , 1, 2  for delay 1 and 2
+Speed   / select speed (1/2x , 1x, 2x)  for delay 1 and 2
 
 Disto   / add distortion in the feedback
 
-Filter  / -100 -> 0   LP    0 -> 100  HP
+Filter  / -100 -> 0   LP  ,   0 -> 100  HP
 
 Filter_On     / filter on/off
 
 
-Mod devices installation
+Mod devices installation:
+
 • Copy the zwabo-cozmics.lv2 folder to your Mod:
 ```
   scp -rp <path to zwabo-cozmics.lv2> root@192.168.51.1:/root/.lv2

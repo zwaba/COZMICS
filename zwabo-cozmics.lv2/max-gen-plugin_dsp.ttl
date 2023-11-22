@@ -207,7 +207,10 @@
         lv2:maximum 10000 ;
     ] ;
 
-    rdfs:comment "Generated from Max gen~ and github.com/moddevices/max-gen-plugins" ;
+   rdfs:comment """
+COZMICS
+Ambiant tool with 4 asynchronous delay lines , a crossfeed between the lines and more features
+""" ;
 
     mod:brand "Zwabo" ;
     mod:label "COZMICS" ;

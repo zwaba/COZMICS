@@ -13,7 +13,7 @@
 @prefix unit:  <http://lv2plug.in/ns/extensions/units#> .
 @prefix time: <http://lv2plug.in/ns/ext/time#> .
 
-<https://github.com/zwaba/COZMICS>
+<https://github.com/zwaba/COZMIC>
     a lv2:DelayPlugin, lv2:Plugin, doap:Project ;
 
     lv2:extensionData opts:interface ;
@@ -33,7 +33,7 @@
         lv2:index 0 ;
         lv2:symbol "lv2_audio_in_1" ;
         lv2:name "Audio Input 1" ;
-        pg:group <https://github.com/zwaba/COZMICS#portGroup_dpf_stereo> ;
+        pg:group <https://github.com/zwaba/COZMIC#portGroup_dpf_stereo> ;
         lv2:designation pg:left ;
     ] ,
     [
@@ -41,7 +41,7 @@
         lv2:index 1 ;
         lv2:symbol "lv2_audio_in_2" ;
         lv2:name "Audio Input 2" ;
-        pg:group <https://github.com/zwaba/COZMICS#portGroup_dpf_stereo> ;
+        pg:group <https://github.com/zwaba/COZMIC#portGroup_dpf_stereo> ;
         lv2:designation pg:right ;
     ] ;
 
@@ -50,7 +50,7 @@
         lv2:index 2 ;
         lv2:symbol "lv2_audio_out_1" ;
         lv2:name "Audio Output 1" ;
-        pg:group <https://github.com/zwaba/COZMICS#portGroup_dpf_stereo> ;
+        pg:group <https://github.com/zwaba/COZMIC#portGroup_dpf_stereo> ;
         lv2:designation pg:left ;
     ] ,
     [
@@ -58,7 +58,7 @@
         lv2:index 3 ;
         lv2:symbol "lv2_audio_out_2" ;
         lv2:name "Audio Output 2" ;
-        pg:group <https://github.com/zwaba/COZMICS#portGroup_dpf_stereo> ;
+        pg:group <https://github.com/zwaba/COZMIC#portGroup_dpf_stereo> ;
         lv2:designation pg:right ;
     ] ;
 
@@ -74,6 +74,15 @@
     [
         a lv2:InputPort, lv2:ControlPort ;
         lv2:index 5 ;
+        lv2:name "FadeOut" ;
+        lv2:symbol "FadeOut" ;
+        lv2:default 1000 ;
+        lv2:minimum 0 ;
+        lv2:maximum 10000 ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 6 ;
         lv2:name "Filter" ;
         lv2:symbol "Filter" ;
         lv2:default 0 ;
@@ -82,7 +91,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 6 ;
+        lv2:index 7 ;
         lv2:name "Filter_On" ;
         lv2:symbol "Filter_On" ;
         lv2:default 0 ;
@@ -92,7 +101,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 7 ;
+        lv2:index 8 ;
         lv2:name "REC" ;
         lv2:symbol "REC" ;
         lv2:default 0 ;
@@ -102,7 +111,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 8 ;
+        lv2:index 9 ;
         lv2:name "crossfeed" ;
         lv2:symbol "crossfeed" ;
         lv2:default 0 ;
@@ -111,7 +120,7 @@
     ] ,
     [
         a lv2:OutputPort, lv2:ControlPort ;
-        lv2:index 9 ;
+        lv2:index 10 ;
         lv2:name "delay1" ;
         lv2:symbol "delay1" ;
         lv2:default 0 ;
@@ -120,7 +129,7 @@
     ] ,
     [
         a lv2:OutputPort, lv2:ControlPort ;
-        lv2:index 10 ;
+        lv2:index 11 ;
         lv2:name "delay2" ;
         lv2:symbol "delay2" ;
         lv2:default 0 ;
@@ -129,7 +138,7 @@
     ] ,
     [
         a lv2:OutputPort, lv2:ControlPort ;
-        lv2:index 11 ;
+        lv2:index 12 ;
         lv2:name "delay3" ;
         lv2:symbol "delay3" ;
         lv2:default 0 ;
@@ -138,7 +147,7 @@
     ] ,
     [
         a lv2:OutputPort, lv2:ControlPort ;
-        lv2:index 12 ;
+        lv2:index 13 ;
         lv2:name "delay4" ;
         lv2:symbol "delay4" ;
         lv2:default 0 ;
@@ -147,7 +156,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 13 ;
+        lv2:index 14 ;
         lv2:name "double" ;
         lv2:symbol "double" ;
         lv2:default 0 ;
@@ -157,7 +166,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 14 ;
+        lv2:index 15 ;
         lv2:name "feedback" ;
         lv2:symbol "feedback" ;
         lv2:default 1 ;
@@ -166,7 +175,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 15 ;
+        lv2:index 16 ;
         lv2:name "mix" ;
         lv2:symbol "mix" ;
         lv2:default 0.5 ;
@@ -175,7 +184,17 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 16 ;
+        lv2:index 17 ;
+        lv2:name "reset" ;
+        lv2:symbol "reset" ;
+        lv2:default 0 ;
+        lv2:minimum 0 ;
+        lv2:maximum 1 ;
+	lv2:portProperty lv2:integer, lv2:toggled, mod:preferMomentaryOnByDefault ;
+    ] ,
+    [
+        a lv2:InputPort, lv2:ControlPort ;
+        lv2:index 18 ;
         lv2:name "reverse" ;
         lv2:symbol "reverse" ;
         lv2:default 0 ;
@@ -185,7 +204,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 17 ;
+        lv2:index 19 ;
         lv2:name "speed" ;
         lv2:symbol "speed" ;
         lv2:default 1 ;
@@ -199,7 +218,7 @@
     ] ,
     [
         a lv2:InputPort, lv2:ControlPort ;
-        lv2:index 18 ;
+        lv2:index 20 ;
         lv2:name "time" ;
         lv2:symbol "time" ;
         lv2:default 2500 ;
@@ -207,26 +226,25 @@
         lv2:maximum 10000 ;
     ] ;
 
-   rdfs:comment """
-COZMICS
+	rdfs:comment """
 Ambiant tool with 4 asynchronous delay lines , a crossfeed between the lines and more features
 """ ;
 
-    mod:brand "Zwabo" ;
-    mod:label "COZMICS" ;
+    mod:brand "zwabo" ;
+    mod:label "COZMIC" ;
 
-    doap:name "COZMICS" ;
+    doap:name "COZMIC" ;
     doap:license <http://spdx.org/licenses/ISC.html> ;
 
     doap:maintainer [
-        foaf:name "Zwabo" ;
-        foaf:homepage <https://github.com/zwaba/COZMICS> ;
+        foaf:name "zwabo" ;
+        foaf:homepage <https://github.com/moddevices/max-gen-plugins> ;
     ] ;
 
     lv2:microVersion 0 ;
     lv2:minorVersion 0 .
 
-<https://github.com/zwaba/COZMICS#portGroup_dpf_stereo>
+<https://github.com/zwaba/COZMIC#portGroup_dpf_stereo>
     a pg:Group , pg:StereoGroup ;
     lv2:name "Stereo" ;
     lv2:symbol "dpf_stereo" .

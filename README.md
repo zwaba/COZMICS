@@ -30,7 +30,7 @@ Reset  /   reset the audio buffers
 FadeOut  /  fade out time on reset  between 0 and 1000 ms
 
 
-Mod devices installation:
+Mod Dwarf installation:
 
 • Copy the zwabo-cozmic.lv2 folder to your Mod:
 ```

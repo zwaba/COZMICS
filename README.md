@@ -34,9 +34,10 @@ Mod devices installation:
 
 • Copy the zwabo-cozmic.lv2 folder to your Mod:
 ```
-  scp -rp <path to zwabo-cozmics.lv2> root@192.168.51.1:/root/.lv2
+  scp -rp <path to zwabo-cozmic.lv2> root@192.168.51.1:/root/.lv2
   ```
 
 
 • Enter password "mod"
-• Reboot Mod
+
+• Reboot Mod Dwarf

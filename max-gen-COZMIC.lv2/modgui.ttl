@@ -1,15 +1,15 @@
 @prefix modgui: <http://moddevices.com/ns/modgui#> .
 @prefix lv2:    <http://lv2plug.in/ns/lv2core#> .
 
-<https://github.com/zwaba/COZMIC>
+<urn:maxgen:COZMIC>
     modgui:gui [
         modgui:resourcesDirectory <modgui> ;
         modgui:iconTemplate <modgui/icon-cozmic.html> ;
         modgui:stylesheet <modgui/stylesheet-cozmic.css> ;
         modgui:screenshot <modgui/screenshot-cozmic.png> ;
         modgui:thumbnail <modgui/thumbnail-cozmic.png> ;
-        modgui:brand "zwabo" ;
-        modgui:label "COZMIC" ;
+        modgui:brand "Zwabo" ;
+        modgui:label "_COZMIC" ;
         modgui:model "lata" ;
         modgui:panel "7-knobs" ;
         modgui:color "star" ;

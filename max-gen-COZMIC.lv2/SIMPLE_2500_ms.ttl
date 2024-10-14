@@ -9,13 +9,10 @@
 <>
 	a pset:Preset ;
 	lv2:appliesTo <https://github.com/zwaba/COZMIC> ;
-	rdfs:label "DOUBLE 4000 ms" ;
+	rdfs:label "SIMPLE 2500 ms" ;
 	lv2:port [
 		lv2:symbol "Disto" ;
 		pset:value 0.0
-	] , [
-		lv2:symbol "FadeOut" ;
-		pset:value 4000.0
 	] , [
 		lv2:symbol "Filter" ;
 		pset:value 0.0
@@ -30,7 +27,7 @@
 		pset:value 0.0
 	] , [
 		lv2:symbol "double" ;
-		pset:value 1.0
+		pset:value 0.0
 	] , [
 		lv2:symbol "feedback" ;
 		pset:value 1.0
@@ -48,6 +45,6 @@
 		pset:value 1.0
 	] , [
 		lv2:symbol "time" ;
-		pset:value 4000.0
+		pset:value 2500.0
 	] .
 

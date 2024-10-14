@@ -25,9 +25,8 @@ Filter  / -100 -> 0   LP  ,   0 -> 100  HP
 
 Filter_On     / filter on/off
 
-Reset  /   reset the audio buffers
+Reset  /  fade out and reset the audio buffers, fade time = time parameter
 
-FadeOut  /  fade out time on reset  between 0 and 1000 ms
 
 
 Mod Dwarf installation:
